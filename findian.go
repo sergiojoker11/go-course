@@ -22,19 +22,19 @@ func main() {
 
 }
 
-func isTheFirstCharacterAnI(userInput string) boolean {
+func isTheFirstCharacterAnI(userInput string) bool {
 	var firstCharacter = string(userInput[0])
 	var output = (firstCharacter == "i" || firstCharacter == "I")
 	return output
 }
 
-func isTheLastCharacterAnN(userInput string) boolean {
-	var lastCharacter = string(userInput[len(userInput)-1 : 1])
+func isTheLastCharacterAnN(userInput string) bool {
+	var lastCharacter = string(userInput[len(userInput) - 1])
 	var output = (lastCharacter == "n" || lastCharacter == "N")
 	return output
 }
 
-func isTheCharacterAAChracterOf(userInput string) boolean {
+func isTheCharacterAAChracterOf(userInput string) bool {
 	var output = (strings.Contains(userInput, "a") || strings.Contains(userInput, "A"))
 	return output
 }
